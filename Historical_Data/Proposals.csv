@@ -1,0 +1,29 @@
+Proposal ID,Title,Body
+0xaee9727ec0319e77da7ac49d5e4db631a75fb034aa27748e688c4bfb8458c349,YIP-210 Finalizing YIP-114 and implementing a rebalancing framework. ,"# YIP-210 Finalizing YIP-114 and implementing a rebalancing framework. 
+
+# Background
+1. 0xE has maliciously denied other team members admin access to Yam's core infrastructure. Discord / Twitter / Forums (closed) / Github / Gsuite (closed) / Website is all under his sole control. He has removed admin access from other team members without a vote or consultation. https://snapshot.org/#/yam.eth/proposal/0x617192f236033eac7439ec0b3ef8765c7b5eaf4279609ff02b195fb248ca20a8
+2. A small group of YAM token holders who bought at a discount to treasury value tried to exploit the Treasury by allowing redemptions AND donating (to their own charity) the rest of the treasury from people who did not or forgot to claim. This small group of malicious individuals was actively supported by 0xE. https://snapshot.org/#/yam.eth/proposal/0x3db446c52f54bba28b95551dfa8f55ca0a9fda868dbec04d37a46467eb3fc1bf
+3. All proposals will go thru snapshot and or offical governance proposals from now on. Any questions or discussions can be done via the link on the proposal. 0xE is in fact in control of snapshot as well, so if there is any censoring there, we will move it to the official governance proposals. 
+4. YIP-210 is a continuation of the work that was interrupted on YIP-114. Since then there has been a redemption and the treasury has been partially redeemed. This proposal will finalize the work done on YIP-114 by creating a rebalancing structure that is related to the investment risk orginally chosen back when the treasury was managed. 
+5. Yam DAO has been put into a hibernation mode, to preserve the treasury and wait till there are more interested non-malicious parties in rebuilding the DAO. Feel free to contact me at IYamFeddas.eth@skiff.com if you are interested in helping. 
+
+## Summary
+
+This YIP-210 simplifies the treasury management to a rebalancing strategy for a portfolio consisting of 70% ETH and 30% USDC, with a rebalancing threshold of 7.5%. This will allow for super low maintaince and minimal on-chain smart contract interactions with the treasury.
+Based on backtesting of this strategy, it has proven to provide superior results compared to a buy and hold strategy since 2021, with lower volatility. Longer term buy and hold basis generally out performs but it ultimately depends on at which point did you buy. 
+
+
+## Methodology:
+
+Using TradingView's strategy tester, we implemented a rebalancing strategy for an ETH/USD portfolio holding an allocation of 70% ETH and 30% USDC. This strategy involves checking the portfolio balance every 30 days and rebalancing if the difference between the current allocation and the target allocation (70% ETH, 30% USDC) exceeds the rebalancing threshold of 7.5%.
+Link to the strategy and code: https://www.tradingview.com/v/hKwtzj9w/
+
+## Results:
+
+The results obtained from the TradingView strategy tester demonstrate that our rebalancing strategy significantly outperforms a buy and hold strategy since 2021. However, it is worth noting that buy and hold generally performed better when starting from 2021 and earlier. Despite this, the lower risk associated with our rebalancing strategy makes it an attractive option for treasury management.
+
+## Next steps
+1. Complete YIP-114 by adjusting the balances of the treasury 70% ETH and 30% USDC. 
+2. Invest all ETH into wstETH to earn yield.
+3. A monthly check if it is necessary to rebalance the treasury. "
