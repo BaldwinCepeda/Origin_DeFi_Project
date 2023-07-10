@@ -9,6 +9,8 @@
   "author": "Baldwin Cepeda",
   "license": "ISC",
   "dependencies": {
+    "csv-parse": "^5.4.0",
+    "csv-parser": "^3.0.0",
     "csv-writer": "^1.6.0",
     "graphql": "^16.6.0",
     "graphql-request": "^6.0.0"

@@ -1,4 +1,130 @@
 Proposal ID,Title,Body,Choices,Start Block,End Block,Snapshot #
+0x19d94e61b12167de87e76658242e85324cef3c57b6ff01d747f1e45888f37f2d,"Strategy Allocation for Week of July 3, 2023","OUSD holdings are adjusted on a weekly basis. Funds are allocated to approved strategies according to a community vote.
+
+Please read how strategy allocation works and review the rules before voting:
+
+https://docs.ousd.com/core-concepts/fund-management
+
++ Note that governance has limited our LUSD+3Crv allocation to a maximum of $100k.
+
+_Pro tip_
+
+Josh built a calculator that can be used to figure out how you might want to vote. It pulls the live APY numbers for each protocol as well as the current allocation numbers from OUSD analytics. The calculations in the spreadsheet are not guaranteed to be accurate, so please do your own research.
+
+https://docs.google.com/spreadsheets/d/1J6ZxYHcRtflCNzMsyTMn57-GnKGCp7US4RO2Q-m_pGw/edit","Existing Allocation,Aave DAI,Aave USDC,Aave USDT,Compound DAI,Compound USDC,Compound USDT,Convex DAI+USDC+USDT,Convex LUSD+3Crv,Convex OUSD+3Crv,Morpho Aave DAI,Morpho Aave USDC,Morpho Aave USDT,Morpho Compound DAI,Morpho Compound USDC,Morpho Compound USDT",1688410800,1688583600,17614262
+0x5aca702bdc42a7a606b6a30da1ebddb68f755b0e9d871760854f5830a1553b16,"Strategy Allocation for Week of June 26, 2023","OUSD holdings are adjusted on a weekly basis. Funds are allocated to approved strategies according to a community vote.
+
+Please read how strategy allocation works and review the rules before voting:
+
+https://docs.ousd.com/core-concepts/fund-management
+
++ Note that governance has limited our LUSD+3Crv allocation to a maximum of $100k.
+
+_Pro tip_
+
+Josh built a calculator that can be used to figure out how you might want to vote. It pulls the live APY numbers for each protocol as well as the current allocation numbers from OUSD analytics. The calculations in the spreadsheet are not guaranteed to be accurate, so please do your own research.
+
+https://docs.google.com/spreadsheets/d/1J6ZxYHcRtflCNzMsyTMn57-GnKGCp7US4RO2Q-m_pGw/edit","Existing Allocation,Aave DAI,Aave USDC,Aave USDT,Compound DAI,Compound USDC,Compound USDT,Convex DAI+USDC+USDT,Convex LUSD+3Crv,Convex OUSD+3Crv,Morpho Aave DAI,Morpho Aave USDC,Morpho Aave USDT,Morpho Compound DAI,Morpho Compound USDC,Morpho Compound USDT",1687374000,1687978800,17529692
+0xfe889d4841082f3c4c184bb752945e3a46f585466c815d34727dd8f218a58781,"Strategy Allocation for Week of June 19, 2023","OUSD holdings are adjusted on a weekly basis. Funds are allocated to approved strategies according to a community vote.
+
+Please read how strategy allocation works and review the rules before voting:
+
+https://docs.ousd.com/core-concepts/fund-management
+
++ Note that governance has limited our LUSD+3Crv allocation to a maximum of $100k.
+
+_Pro tip_
+
+Josh built a calculator that can be used to figure out how you might want to vote. It pulls the live APY numbers for each protocol as well as the current allocation numbers from OUSD analytics. The calculations in the spreadsheet are not guaranteed to be accurate, so please do your own research.
+
+https://docs.google.com/spreadsheets/d/1J6ZxYHcRtflCNzMsyTMn57-GnKGCp7US4RO2Q-m_pGw/edit","Existing Allocation,Aave DAI,Aave USDC,Aave USDT,Compound DAI,Compound USDC,Compound USDT,Convex DAI+USDC+USDT,Convex LUSD+3Crv,Convex OUSD+3Crv,Morpho Aave DAI,Morpho Aave USDC,Morpho Aave USDT,Morpho Compound DAI,Morpho Compound USDC,Morpho Compound USDT",1687071600,1687374000,17507944
+0x45706ed65e317f7a2777b93a8612c93a841cafce4dbf39a764d0ac20e6811d4c,Proposal for $OUSD Oracle,"Dear community, I have a proposal to consider for improving the utility and reach of $OUSD across multiple ecosystems and DeFi Protocols. As the one of the premiere stablecoins in the industry, I believe it is imperative for $OUSD to exist not only natively for yield-generation on Origin Protocol, but also to be supported by various DeFi applications across multiple chains. 
+
+For this, of course, we would need to generate a price oracle for the $OUSD token. After researching various oracle solutions to provide an on-chain price feed for the $OUSD, I realized it is difficult and that the oracles who provide support for $OUSD are limited. 
+
+I was able to identify one highly reputable oracle which would be able to successfully provide a resilient, production-ready price feed for $OUSD upon request, which is DIA Data. 
+
+Here are some key reasons why DIA Data is a strong choice in utilizing an oracle provider for the $OUSD token to be supported on various DeFi Protocols. 
+
+**Transparency and reliability:** DIA Data is a decentralized platform that provides reliable and 100% transparent data feeds, with a strong reputation of success since 2018. Their data is verifiable, open-source, and up-to-date, which is crucial for making informed decisions in the DeFi ecosystem.
+
+**Sourcing:** DIA’s asset data is sourced on the individual trade level directly from over 80 DEXs and CEXs, enabling them to support assets like $OUSD. Whereas other oracles mostly rely on a limited amount of asset’s price data from off-chain data from trusted third party sources, DIA gets its reliable trade data directly from the source. This enables them to support over 3,000 crypto tokens, which to my knowledge is the largest data library of any oracle.  
+
+**Customizable data feeds:** DIA Data provides custom data feeds tailored to our specific protocol use case and needs. This flexibility will allow us to access the data in the format which is most relevant to our operations and ensure longevity in the ever-changing DeFi ecosystem. For example, a stablecoin price oracle need not update every 1 minute, because price fluctuations are limited, but instead it is more optimal to have a stablecoin price feed update per a specified deviation threshold. The parameters and assets held in these feeds can also be adjusted after the oracle is deployed, making our reliance on DIA’s oracles future-proof.
+
+**Competitive pricing:** DIA does not charge for their oracles. The only cost they ask is to cover the gas costs of pushing the updates on-chain. Simply the operational expense of the oracle. 
+
+By using DIA Data, we can ensure that the data we rely on for our decentralized applications and smart contracts is 100% transparent, credibly neutral, and verifiable. I believe that DIA Data's services will provide us with a competitive advantage in our industry with the provision of an $OUSD markets across various DeFi protocols, further improving the utility and visibility of $OUSD and the Origin Protocol.
+
+If the community is interested in exploring this, here are the rough steps we would take:
+
+1) Once enough interest is expressed, Origin Protocol will request an $OUSD price feed from DIA on the DIA Forum
+2) DIA will deploy the $OUSD price feed for Origin Protocol
+3) Origin Protocol will fund the gas wallet for covering the gas costs of the custom $OUSD oracle
+4) Origin Protocol will share word of the $OUSD oracle through marketing channels, and leverage their existing ecosystem of partners as well as the DIA ecosystem to connect with DeFi protocols which are interested in using the $OUSD price oracle. 
+
+This is a proposal to request an $OUSD oracle from DIA
+
+There are two options on which to vote:
+Option 1: YES – Create an $OUSD and create additional utility for $OUSD across various DeFi Protocols
+Option 2: NO – Do not create an $OUSD oracle
+
+
+For more resources on DIA, I found these links to be informative:
+- Website: https://www.diadata.org/
+- DIA Documentation: https://docs.diadata.org/introduction/readme
+- DIA Twitter: https://twitter.com/DIAdata_org
+- How to access the oracle: 
+https://docs.diadata.org/documentation/oracle-documentation/access-the-oracle
+
+*disclaimer* - I am a contributor and supporter of the DIA DAO (:","Yes,No",1687201200,1687287600,17494141
+0x18c8d8adeda9d6f4b41b1909c3206de584f369a32f784c46c316a7944d5e7c87,Revised initial Morpho allocation,"#### Summary
+
+Deposit 1% of OETH's collateral to the Morpho Aave strategy and the remaining unallocated WETH to the Convex OETH AMO strategy.
+
+#### Background
+
+On June 2, [a proposal was unanimously approved](https://vote.ousd.com/#/proposal/0xd60ab9126f9b3f68601b93aeaed22f89bd4136206c17d173f3c95f52f0416a7e) to allocate 660 WETH to Morpho Aave after the strategy was launched with an allocation of 57.2 WETH. On the following day, the Morpho team [announced](https://discord.com/channels/851206607324577823/851206607324577826/1113947239879028776) that they had paused the deposit function on their contracts due to a potential issue with their interest rate model. As a result, all OETH funds were withdrawn from the Morpho Aave strategy as a precaution. Based on continued discussions with the Morpho team, we have reason to believe that the vulnerability has been addressed and there is no clear and present risk to any new deposits.
+
+#### Changing circumstances
+
+Since the prior Morpho Aave allocation proposal was created, OETH's TVL has grown by 67% and the AMO strategy's share of the Convex pool has fallen to 78%. This means that the strategy is earning a smaller portion of the rewards generated for this pool. Meanwhile, the pool is still earning an APY of 11.01% as of today, which is significantly higher than what the Morpho Aave strategy is likely to generate anytime soon. The takeaway is that any WETH allocated to our Convex strategy will be more productive than it would be if allocated to Morpho unless the LP participation in Convex falls significantly.
+
+#### Recommendation
+
+I'm suggesting that we resume the Morpho Aave strategy by depositing 1% of OETH's total collateral (roughly 100 WETH) and then depositing all remaining unallocated collateral (currently 933 ETH) to the Convex OETH AMO strategy. If implemented today, this would result in the following balance of allocations for OETH:
+
+- Convex: 42.65%
+- Lido: 7.93%
+- Rocket Pool: 27.92%
+- Frax: 20.50%
+- Morpho: 1.00%","For,Against,Abstain",1686531600,1686618000,17460406
+0xfcb59a5b35092898b4343592d63c427b599090fbe7670f0aa1fc8516c1dd19b9,"Strategy Allocation for Week of June 12, 2023","OUSD holdings are adjusted on a weekly basis. Funds are allocated to approved strategies according to a community vote.
+
+Please read how strategy allocation works and review the rules before voting:
+
+https://docs.ousd.com/core-concepts/fund-management
+
++ Note that governance has limited our LUSD+3Crv allocation to a maximum of $100k.
+
+_Pro tip_
+
+Josh built a calculator that can be used to figure out how you might want to vote. It pulls the live APY numbers for each protocol as well as the current allocation numbers from OUSD analytics. The calculations in the spreadsheet are not guaranteed to be accurate, so please do your own research.
+
+https://docs.google.com/spreadsheets/d/1J6ZxYHcRtflCNzMsyTMn57-GnKGCp7US4RO2Q-m_pGw/edit","Existing Allocation,Aave DAI,Aave USDC,Aave USDT,Compound DAI,Compound USDC,Compound USDT,Convex DAI+USDC+USDT,Convex LUSD+3Crv,Convex OUSD+3Crv,Morpho Aave DAI,Morpho Aave USDC,Morpho Aave USDT,Morpho Compound DAI,Morpho Compound USDC,Morpho Compound USDT",1686294000,1686769200,17441970
+0x499269b5b4f199c548c424a2096958a3f805dea8afdc57e20b0ecb57ae8a9af3,"Strategy Allocation for Week of June 5, 2023","OUSD holdings are adjusted on a weekly basis. Funds are allocated to approved strategies according to a community vote.
+
+Please read how strategy allocation works and review the rules before voting:
+
+https://docs.ousd.com/core-concepts/fund-management
+
++ Note that governance has limited our LUSD+3Crv allocation to a maximum of $100k.
+
+_Pro tip_
+
+Josh built a calculator that can be used to figure out how you might want to vote. It pulls the live APY numbers for each protocol as well as the current allocation numbers from OUSD analytics. The calculations in the spreadsheet are not guaranteed to be accurate, so please do your own research.
+
+https://docs.google.com/spreadsheets/d/1J6ZxYHcRtflCNzMsyTMn57-GnKGCp7US4RO2Q-m_pGw/edit","Existing Allocation,Aave DAI,Aave USDC,Aave USDT,Compound DAI,Compound USDC,Compound USDT,Convex DAI+USDC+USDT,Convex LUSD+3Crv,Convex OUSD+3Crv,Morpho Aave DAI,Morpho Aave USDC,Morpho Aave USDT,Morpho Compound DAI,Morpho Compound USDC,Morpho Compound USDT",1685991600,1686078000,17403423
 0xd60ab9126f9b3f68601b93aeaed22f89bd4136206c17d173f3c95f52f0416a7e,Initial Morpho Aave allocation for OETH,"A proposal recently passed with unanimous approval to deploy a Morpho Aave strategy for Origin Ether. This enables a yield source for our currently-idle WETH that is sitting in the vault dragging down our APY.
 https://vote.ousd.com/#/proposal/0xdbb4a7dae2a642cf95c08c4b4c7c9ffbfaeddbdb01f0fd2a698f0d3e2fe5384f
 
@@ -12,6 +138,28 @@ Morpho Aave strategy allocation:
 0) current: ~57.20 WETH
 1) after passage of this proposal: ~660 ETH
 2) Thursday, June 8th: default strategy","For,Against,Abstain",1685617200,1685703600,17385406
+0x7da70f0614557c0c40151d2d30d9b23929abf60d6d7b94f13c4973a1d7f14d8b,Stop buyback in favor of protocol development,"## Author(s):
+
+rugolini
+
+## Proposal:
+
+Let's stop with buyback to accumulate CVX or AURA for the protocol
+
+## Summary
+
+Enter a short 1-3 sentence summary of the proposal, tl;dr version of what follows
+Since the beginning of the year, we have accumulated 14833.221542 OUSD for the buyback.
+This amount doesn't move the needle nor create buy pressure for OGV.
+I believe these funds would be better used to buy CVX or AURA to benefit the protocol strategies. 
+
+## Motivation
+
+While looking at our backlog, one task was automating the buyback process. This made me examine how much buy pressure we generate and whether the current manual work is worth the process.
+
+## Goals
+
+Accumulate more CVX or AURA tokens.","Yes,No",1685563560,1686168360,17381107
 0xd98b78bf4b18b3bda7b9404c95e732b39971a8f77593473a506b9c0920050f97,"Strategy Allocation for Week of May 29, 2023","OUSD holdings are adjusted on a weekly basis. Funds are allocated to approved strategies according to a community vote.
 
 Please read how strategy allocation works and review the rules before voting:
@@ -148,157 +296,3 @@ _Pro tip_
 Josh built a calculator that can be used to figure out how you might want to vote. It pulls the live APY numbers for each protocol as well as the current allocation numbers from OUSD analytics. The calculations in the spreadsheet are not guaranteed to be accurate, so please do your own research.
 
 https://docs.google.com/spreadsheets/d/1J6ZxYHcRtflCNzMsyTMn57-GnKGCp7US4RO2Q-m_pGw/edit","Existing Allocation,Aave DAI,Aave USDC,Aave USDT,Compound DAI,Compound USDC,Compound USDT,Convex DAI+USDC+USDT,Convex LUSD+3Crv,Convex OUSD+3Crv,Morpho Aave DAI,Morpho Aave USDC,Morpho Aave USDT,Morpho Compound DAI,Morpho Compound USDC,Morpho Compound USDT",1681153200,1681326000,17015458
-0xf366aa3a5b87a44310be0ae1f5a4454aa046db7a05d1c7331376134070c1e917,Convert idle OGN funds to CVX to boost OUSD yield?,"Currently, 938,706 OGN are sitting in the old buyback contract, worth around $115k at the time of writing.
-
-Old buyback contract: https://etherscan.io/address/0x77314EB392b2be47C014cde0706908b3307Ad6a9
-
-The aim of this proposal is to jumpstart our voting power accumulation plan and convert these idle funds into CVX to have them work for the protocol and boost OUSD yield.
-
-Supplementing the previously passed proposal on actively accumulating governance tokens at https://vote.ousd.com/#/proposal/0x8358edc685eeb7c76ad4a7c0688622547b6888a152dda319e8ce424652fc739f, it would be at the Strategist’s discretion to manage these funds accordingly to ensure optimal yield and risk/return profile.
-
-Risks: Owning idle funds allows for a degree of insurance in the event of a compromised strategy/token. Vote-locked tokens could still be used in a similar manner, but would be constrained by the lock duration before being available as backing (16 weeks in the case of vlCVX).","Yes, convert OGN to CVX,No, keep as is",1680609120,1680781920,16975452
-0x5dea673f8f004817ff9551bb4b8996c73e3d1a5e98250438f1c4693a239c965e,"Strategy Allocation for Week of April 3, 2023","OUSD holdings are adjusted on a weekly basis. Funds are allocated to approved strategies according to a community vote.
-
-Please read how strategy allocation works and review the rules before voting:
-
-https://docs.ousd.com/core-concepts/fund-management
-
-+ Note that governance has limited our LUSD+3Crv allocation to a maximum of $100k.
-
-_Pro tip_
-
-Josh built a calculator that can be used to figure out how you might want to vote. It pulls the live APY numbers for each protocol as well as the current allocation numbers from OUSD analytics. The calculations in the spreadsheet are not guaranteed to be accurate, so please do your own research.
-
-https://docs.google.com/spreadsheets/d/1J6ZxYHcRtflCNzMsyTMn57-GnKGCp7US4RO2Q-m_pGw/edit","Existing Allocation,Aave DAI,Aave USDC,Aave USDT,Compound DAI,Compound USDC,Compound USDT,Convex DAI+USDC+USDT,Convex LUSD+3Crv,Convex OUSD+3Crv,Morpho Aave DAI,Morpho Aave USDC,Morpho Aave USDT,Morpho Compound DAI,Morpho Compound USDC,Morpho Compound USDT",1680548400,1680721200,16968507
-0xbde8cbe49cabd0a9a44d99e7e39b5898f7ed02119da44b0f522230cf52cb4747,"Strategy Allocation for Week of March 27, 2023","OUSD holdings are adjusted on a weekly basis. Funds are allocated to approved strategies according to a community vote.
-
-Please read how strategy allocation works and review the rules before voting:
-
-https://docs.ousd.com/core-concepts/fund-management
-
-+ Note that governance has limited our LUSD+3Crv allocation to a maximum of $100k.
-
-_Pro tip_
-
-Josh built a calculator that can be used to figure out how you might want to vote. It pulls the live APY numbers for each protocol as well as the current allocation numbers from OUSD analytics. The calculations in the spreadsheet are not guaranteed to be accurate, so please do your own research.
-
-https://docs.google.com/spreadsheets/d/1J6ZxYHcRtflCNzMsyTMn57-GnKGCp7US4RO2Q-m_pGw/edit","Existing Allocation,Aave DAI,Aave USDC,Aave USDT,Compound DAI,Compound USDC,Compound USDT,Convex DAI+USDC+USDT,Convex LUSD+3Crv,Convex OUSD+3Crv,Morpho Aave DAI,Morpho Aave USDC,Morpho Aave USDT,Morpho Compound DAI,Morpho Compound USDC,Morpho Compound USDT",1679943600,1680116400,16919691
-0x773a3b487460cc50c3a57b0a242eabde1080b87349443c58c3917e65c125d371,"Strategy Allocation for Week of March 20, 2023","OUSD holdings are adjusted on a weekly basis. Funds are allocated to approved strategies according to a community vote.
-
-Please read how strategy allocation works and review the rules before voting:
-
-https://docs.ousd.com/core-concepts/fund-management
-
-+ Note that governance has limited our LUSD+3Crv allocation to a maximum of $100k.
-
-_Pro tip_
-
-Josh built a calculator that can be used to figure out how you might want to vote. It pulls the live APY numbers for each protocol as well as the current allocation numbers from OUSD analytics. The calculations in the spreadsheet are not guaranteed to be accurate, so please do your own research.
-
-https://docs.google.com/spreadsheets/d/1J6ZxYHcRtflCNzMsyTMn57-GnKGCp7US4RO2Q-m_pGw/edit","Existing Allocation,Aave DAI,Aave USDC,Aave USDT,Compound DAI,Compound USDC,Compound USDT,Convex DAI+USDC+USDT,Convex LUSD+3Crv,Convex OUSD+3Crv,Morpho Aave DAI,Morpho Aave USDC,Morpho Aave USDT,Morpho Compound DAI,Morpho Compound USDC,Morpho Compound USDT",1679338800,1679511600,16869511
-0xb6f292d52083d60f3e7c78b9131aa142f607bb9e5d45ab4644dbd5fa10cd96ec,Semi-automated funds allocation,"#### Summary
-
-Transition from a weekly funds allocation vote to a programmatic calculation of the optimal allocation given a set of pre-defined rules. Retain human oversight and execution of the reallocation.
-
-#### Background
-
-Since late 2021, a weekly vote has been conducted to determine how OUSD’s underlying collateral (DAI, USDC, USDT) should be allocated across the various yield-generating strategies. Four voters participated in the first proposal. Over a year later, eight voters participated in the most recent proposal. Voting each week is time-consuming, and voters are not aligned on a framework for determining the appropriate allocation.
-
-#### What’s not working
-
-OUSD holders want to earn the highest possible risk-adjusted yield, but their funds are managed in a way that often doesn’t maximize risk-adjusted yield. Voters may skew the allocation to lower-yielding, potentially higher-risk strategies simply because they happen to show up and vote during a week when participation is low.
-
-Voters lack the information necessary to make optimal decisions. Moving funds in and out of different strategies involves non-trivial gas costs and slippage in the case of Curve/Convex. Allocations also often involve swapping the underlying collateral. It’s not currently possible for voters to account for these costs to know the real impact of their decisions.
-
-Our current process is also inefficient and slow. Even if all voters have sufficient information and are aligned on the desired outcomes, it’s a waste of time for each of them to go through the process of calculating the best allocation. If they all agreed in advance on a set of rules, the calculation could be run once and executed according to their collective preferences. With the current 48-hour voting period and a 7-day wait in between each reallocation, the protocol is unable to react to market opportunities that would bring higher yield.
-
-Perhaps most importantly, prospective users of OUSD are concerned that there is no predictable way that their funds will be managed and they don’t know who will be making the decisions from one week to the next. While the consequences are relatively low with allocations being limited to only a handful of heavily-audited, whitelisted strategies that are constantly being monitored for risk, it’s reasonable for them to wonder if all of the collateral will be converted to the least desirable stablecoin and deposited into a single protocol, for example. They want to know that there is a well-informed, objective procedure for reallocations.
-
-#### Proposal
-
-Let’s work our way toward automated reallocations that can be triggered more frequently without compromising security. In the past, we’ve contemplated an automated rebalancing feature at the smart contract level that would seek to maximize yield whenever a public function is called. Exposing this functionality could be dangerous and would lead to increased code complexity as our strategy count and ruleset continue to grow. But there’s nothing stopping us from creating an off-chain script that can be run to calculate the optimal allocation for our strategists to execute. This would allow for more frequent, effective reallocations while maintaining human oversight.
-
-Rather than vote weekly on how funds should be allocated in the moment, voters would prescribe rules in advance that would be incorporated into the script. For example, one rule might be that no more than 50% of the funds should be held in any one stablecoin (except during extraordinary circumstances like this past weekend when holding 100% USDT would have been preferred). This would become one of the constraints used to mitigate risk.
-
-We’ve already started to scratch the surface with informal constraints, such as the limit on our Convex LUSD allocation. Voters agreed on a maximum allocation of $100k for that strategy and we added a simple formula to the strategists’ tooling to handle any excess votes. In the future, every strategy could have a maximum percentage or dollar allocation that voters would set and update from time to time.
-
-#### Example logic
-
-‣ Get the yield rates for all strategies
-‣ Rank DAI, USDC, and USDT according to the rates available from the strategies
-‣ Calculate an optimal Convex OUSD allocation of X
-‣ Fund the Convex OUSD strategy up to X using the stablecoin with the lowest opportunity cost
-‣ Iterate through each strategy from highest-yielding to lowest
-‣ Deposit up to Y of the relevant stablecoin into each pool not exceeding a limit of Z
-
-Other potential considerations:
-
-‣ Minimize costs
-‣ Maximize MORPHO rewards
-‣ Allocate a minimum amount to each protocol
-‣ Maintain a certain level of diversification","For,Against,Abstain",1679324400,1679497200,16869476
-0x8358edc685eeb7c76ad4a7c0688622547b6888a152dda319e8ce424652fc739f,Increase the OUSD performance fee to boost future yield?,"#### Abstract
-
-Higher long-term OUSD APYs benefit both OUSD holders and OGV holders. By purchasing CVX tokens with a portion of OUSD yield, the yield on the OUSD pool should increase.
-
-#### Background
-
-Currently, 10% of the yield that is generated by OUSD is used to purchase OGV on the open market to provide incentives for long-term OGV stakers. These rewards are disproportionately distributed to those who are locked up the longest. These incentives play an important role in aligning the interests between OUSD holders and OGV stakers. The more OUSD grows, the greater the rewards for those who are staking their OGV and participating in governance.
-
-#### Motivation
-
-Curve and Convex continue to be a top source of rewards for OUSD. However, those rewards are currently dependent on the benevolence of CRV and CVX holders who vote on behalf of the OUSD pool. OUSD needs a better long-term strategy for accumulating protocol-owned CVX. We’re currently falling behind in the Curve wars as other protocols are constantly growing their CVX position and we’re not. I propose we increase OUSD’s performance fee from 10% to 20% in order to fund ongoing purchases of CVX.
-
-Yearn are currently charging 20% performance fees on their USDT, USDC, and DAI vaults, so this adjustment will bring us in line with current market rates.
-
-With our current 30-day trailing APY over 13%, this is a good time to make the change. 
-
-#### Implementation
-
-In order to move fast and reduce the complexity of the smart contract changes, we should ask the OUSD Strategists to take care of regularly vote-locking the CVX and voting on behalf of the OUSD pool on Curve/Convex. The funds will be sent as OUSD to the Strategist multisig, which will allow for greater flexibility in their use. For example, the Strategists may switch to bribing instead of purchasing CVX or start accumulating another governance token like CRV instead. The purchased tokens will belong to the protocol and should be transferred back to the smart contracts at a later date.
-
-Update the Origin Vault to change the *trusteeFeeBips* from 1000 (10%) to 2000 (20%).
-
-Update the Buyback contract to send half of the funds to the Strategist multisig before swapping the remaining half to OGV as a reward for stakers. 
-
-The percentage split between funds sent to the *treasury* vs *stakers* should start at 50/50 but should be made easily configurable for future voting purposes.
-
-#### Risks
-
-The smart contract risk from implementing this change should be minimal since we only need to update the buyback contract which only ever touches a small percentage of the funds.","Increase to 20%,Keep at 10%",1679005827,1679178627,16843377
-0x5d3aec833c54c2ff45a223f9d138c8af3db4fa3855f7da89d2ad025a6e346f41,"Strategy Allocation for Week of March 13, 2023","OUSD holdings are adjusted on a weekly basis. Funds are allocated to approved strategies according to a community vote.
-
-Please read how strategy allocation works and review the rules before voting:
-
-https://docs.ousd.com/core-concepts/fund-management
-
-+ Note that governance has limited our LUSD+3Crv allocation to a maximum of $100k.
-
-_Pro tip_
-
-Josh built a calculator that can be used to figure out how you might want to vote. It pulls the live APY numbers for each protocol as well as the current allocation numbers from OUSD analytics. The calculations in the spreadsheet are not guaranteed to be accurate, so please do your own research.
-
-https://docs.google.com/spreadsheets/d/1J6ZxYHcRtflCNzMsyTMn57-GnKGCp7US4RO2Q-m_pGw/edit","Existing Allocation,Aave DAI,Aave USDC,Aave USDT,Compound DAI,Compound USDC,Compound USDT,Convex DAI+USDC+USDT,Convex LUSD+3Crv,Convex OUSD+3Crv,Morpho Aave DAI,Morpho Aave USDC,Morpho Aave USDT,Morpho Compound DAI,Morpho Compound USDC,Morpho Compound USDT",1678734000,1678906800,16811840
-0xa04c8bf3774fd940f00fc6720cce07e6839ba9e412ec423161f2c308c7e6f353,Emergency Allocation,"Currently USDC is depegged to the tune of $.91  for one USDC. This proposal would enable strategists to either take advantage of the lower price and allocate more of the treasury to USDC, with the presumption that it will return to dollar parity, or remove our USDC and DAI exposure completely, realize the loss but move to the current safe haven asset USDT.
-
-What’s happening:
-Circle, the company who creates USDC, has publicly stated that they have 3.3b in USD exposed to Silicon Valley Bank (https://twitter.com/circle/status/1634391505988206592?cxt=HHwWgIC-pcqaw64tAAAA), which experienced a bank run yesterday and is likely insolvent (https://www.bloomberg.com/news/articles/2023-03-10/silicon-valley-bank-collapses-enters-fdic-receivership). Assuming the worst case scenario, this $3.3b hole in the $40b backing of USDC would put its value at about $.9175
-
-Argument for allocating more to USDC:
--The $3.3b is almost certainly not all gone, SVB had about $209 billion in total assets and about $175.4 billion in total deposits at the end of last year according to the FDIC, and was looking to raise about $2b this week to cover their balance sheet hole. The hole is likely wider than that but if it were only $2b short that would mean that only ~$33m is missing from USDCs backing and its ‘value’ is still within a few basis points of $1
--It seems unlikely that Circle would be unable to raise money to back itself even if there were a significant hole. This isn’t the same thing as for instance FTX looking for a bailout, the business model is about as low risk as they come
--Allocating our $11m in USDT to USDC would net OUSD ~1m in profit if USDC returned to dollar parity, a 3.5% gain
-
-Argument against allocating more to USDC:
--If circle is unable to reclaim the $3.3b in backing, or the money becomes stuck in the process of liquidating SVB, the price of USDC could actually fall much lower. They have halted redemptions temporarily, but if they were to resume without the backing, for every dollar reclaimed 1:1 the rest of the USDC in circulation would be backed by less USD. I personally don’t think they would allow this to happen since it would blow up their business model even further but it is a possibility.
--If this were to happen, OUSD is already on the hook for substantial losses from the 58% of our supply backed by USDC and DAI (which is largely backed by USDC). Allocating even more would just cause greater losses
-
-There is also a compelling argument to do nothing:
--moving the backing from USDC and DAI to USDT would recognize a ~$1.5m loss, and USDT may not be safer if there are further effects to the traditional banking industry
--USDC could take a long time to return to its $1 peg if the SVB funds become stuck in liquidation limbo and Circle keeps redemptions paused, this could hamstring our strategy options long term (we wouldn’t be able to allocate to 3pool without changing our exposure back to all three coins)
--remaining exposed to all three 3pool coins may be the best bet given the uncertainty of the situation, a not putting all are eggs in one basket sort of situation
-
-The options are:
--Allocate all current USDT holdings to USDC
--Allocate all current USDC and DAI holdings to USDT
--Do nothing","Allocate all USDT funds to USDC,Allocate all USDC+DAI to USDT,Do nothing",1678533075,1678705875,16804455

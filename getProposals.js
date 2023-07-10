@@ -1,5 +1,7 @@
 // Import required packages
 const { request, gql } = require('graphql-request')
+const fs = require('fs');
+const csv = require('csv-parser');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
 // Define an async function to make the GraphQL request and write the data to a CSV file
@@ -74,9 +76,59 @@ async function main() {
       },
     ];
     await csvWriter.writeRecords(records).then(() => {
-      console.log('...Done');
+      console.log("...Completed:" + i);
     });
   }
+
+  const csvFilePath = './Historical_Data/Proposals.csv';
+  const jsonFilePath = './Historical_Data/Proposals.json';
+
+
+
+  const results = [];
+
+  fs.createReadStream(csvFilePath)
+    .pipe(csv())
+    .on('data', (data) => results.push(data))
+    .on('end', () => {
+      fs.writeFile(jsonFilePath, JSON.stringify(results, null, 2), (err) => {
+        if (err) {
+          console.error(err);
+          return;
+        }
+
+        console.log('Conversion completed successfully!');
+      });
+    });
+
+
+  //now read the file and get proposals id to find out the list of voters
+  fs.readFile('./Historical_Data/Proposals.json', 'utf8', (err, data) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    console.log("Here===============");
+
+    try {
+      const parsedData = JSON.parse(data);
+
+      for (i = 0; i < 19; i++) {
+        const proposalId = parsedData[i]["Proposal ID"];
+        console.log(proposalId + " " + i);
+
+      }
+
+
+
+    } catch (error) {
+      console.error("Error occurred while parsing data:", error);
+    }
+
+    // Process the file data
+
+  });
+
 
 
 
@@ -85,4 +137,10 @@ async function main() {
 
 // Call the main function and log when it is finished
 main().catch((error) => console.error(error))
+
+
+
+
+
+
 console.log("end of program ");
