@@ -1,4 +1,54 @@
 Proposal ID,Title,Body,Choices,Start Block,End Block,Snapshot #
+0x4afcbf04e9780bd36523484d816a07f2978ea0c5f527486079b7abb60c9e95fa,"Strategy Allocation for Week of July 10, 2023","OUSD holdings are adjusted on a weekly basis. Funds are allocated to approved strategies according to a community vote.
+
+Please read how strategy allocation works and review the rules before voting:
+
+https://docs.ousd.com/core-concepts/fund-management
+
++ Note that governance has limited our LUSD+3Crv allocation to a maximum of $100k.
+
+_Pro tip_
+
+Josh built a calculator that can be used to figure out how you might want to vote. It pulls the live APY numbers for each protocol as well as the current allocation numbers from OUSD analytics. The calculations in the spreadsheet are not guaranteed to be accurate, so please do your own research.
+
+https://docs.google.com/spreadsheets/d/1J6ZxYHcRtflCNzMsyTMn57-GnKGCp7US4RO2Q-m_pGw/edit","Existing Allocation,Aave DAI,Aave USDC,Aave USDT,Compound DAI,Compound USDC,Compound USDT,Convex DAI+USDC+USDT,Convex LUSD+3Crv,Convex OUSD+3Crv,Morpho Aave DAI,Morpho Aave USDC,Morpho Aave USDT,Morpho Compound DAI,Morpho Compound USDC,Morpho Compound USDT",1688965538,1689188400,17661069
+0x1906e5874aff01de50ff92acc1c10a759b4f8af65bbba814dce11c19881bcebe,Swap one third (1/3) of rETH for WETH,"### Summary
+
+Use the new swap capability of the OETH vault to convert 900 rETH to WETH, which would then be allocated to the Convex AMO strategy.
+
+### Background
+
+Until recently, OETH could not change the makeup of its underlying collateral beyond wrapping/unwrapping ETH and staking frxETH. Its yield-generating capability was at the mercy of whichever tokens were deposited by minters. For example, if only LSTs were deposited and no one ever gave ETH to the protocol, then we wouldn't be able to put our Convex strategy to use. Luckily, a good mix of collateral has been deposited.
+
+Last week, an upgrade to OETH vault was deployed to allow the Strategists to swap collateral using 1inch. This feature was developed after an extensive analysis of different DEX aggregators. It also includes multiple security precautions to prevent the Strategists from swapping to any collateral that hasn't been whitelisted and prevents them from incurring substantial losses. See [the pull request](https://github.com/OriginProtocol/origin-dollar/pull/1559) for more details.
+
+An initial swap will be conducted this week to convert 50 stETH into frxETH. The feature was tested thoroughly prior to deployment, but this small transaction will confirm that everything works as intended in the wild. The purpose of this proposal is to recommend the first meaningful swap to follow.
+
+### Analysis*
+
+##### Active strategies
+| Name | Allocation | Exposure | APR |
+| :---------- | -----------: | ------: | --------: |
+| Convex AMO (ETH) | $18,905,747 | 53.44% | 16.48% |
+| Lido (stETH) | $1,516,339 | 4.29% | 4.00% |
+| Rocket Pool (rETH) | $5,329,588 | 15.04% | 3.17% |
+| Frax staking (frxETH) | $5,455,794 | 15.42% | 4.82% |
+| Morpho Aave (WETH) | $200,072 | 0.57% | 2.27% |
+
+##### Swap
+(900 rETH out)
+| Option | Token in | ETH cost | Break-even | APY impact |
+| :----- | --------:| -------: | --------: | ---------: |
+| A | frxETH | -0.191 | 4.3 days | +10bp |
+| B | stETH | -0.547 | 24.9 days | +5bp |
+| C | WETH | -0.359 | 2.2 days | +33bp |
+
+\* DYOR plz: [see OETH yield model](https://docs.google.com/spreadsheets/d/1SwV9FagWOCw1hkv5l6Uqf6iWOn51-SONWcw2ODqBxfo/edit#gid=167741895)
+
+### Reasoning
+We're big fans of Rocket Pool, and they have been supportive of OETH. However, users are quite vocal about the fact that they are coming to OETH for higher yield. rETH is our lowest-earning collateral type. Swapping some of it for WETH (and subsequently allocating it to the Convex AMO) is the obvious way to maximize yield given our current set of whitelisted strategies.
+
+OETH's other long-term primary value proposition is diversification. By holding OETH, users have exposure to a diversified set of the safest LSTs and farming opportunities. While this proposal would result in less diversification by reducing the protocol's already low exposure to rETH, the increased concentration would be on ETH itself rather than another LST. To the extent that OETH can be backed by ETH and generate a higher yield than LSTs and other aggregators, it should.","For,Against,Abstain",1688547600,1689152400,17626378
 0x19d94e61b12167de87e76658242e85324cef3c57b6ff01d747f1e45888f37f2d,"Strategy Allocation for Week of July 3, 2023","OUSD holdings are adjusted on a weekly basis. Funds are allocated to approved strategies according to a community vote.
 
 Please read how strategy allocation works and review the rules before voting:
@@ -270,29 +320,3 @@ _Pro tip_
 Josh built a calculator that can be used to figure out how you might want to vote. It pulls the live APY numbers for each protocol as well as the current allocation numbers from OUSD analytics. The calculations in the spreadsheet are not guaranteed to be accurate, so please do your own research.
 
 https://docs.google.com/spreadsheets/d/1J6ZxYHcRtflCNzMsyTMn57-GnKGCp7US4RO2Q-m_pGw/edit","Existing Allocation,Aave DAI,Aave USDC,Aave USDT,Compound DAI,Compound USDC,Compound USDT,Convex DAI+USDC+USDT,Convex LUSD+3Crv,Convex OUSD+3Crv,Morpho Aave DAI,Morpho Aave USDC,Morpho Aave USDT,Morpho Compound DAI,Morpho Compound USDC,Morpho Compound USDT",1682362800,1682535600,17109871
-0x85425a6f32625121a42003c051adba0101358119aff56f702146c57162cf6076,"Strategy Allocation for Week of April 17, 2023","OUSD holdings are adjusted on a weekly basis. Funds are allocated to approved strategies according to a community vote.
-
-Please read how strategy allocation works and review the rules before voting:
-
-https://docs.ousd.com/core-concepts/fund-management
-
-+ Note that governance has limited our LUSD+3Crv allocation to a maximum of $100k.
-
-_Pro tip_
-
-Josh built a calculator that can be used to figure out how you might want to vote. It pulls the live APY numbers for each protocol as well as the current allocation numbers from OUSD analytics. The calculations in the spreadsheet are not guaranteed to be accurate, so please do your own research.
-
-https://docs.google.com/spreadsheets/d/1J6ZxYHcRtflCNzMsyTMn57-GnKGCp7US4RO2Q-m_pGw/edit","Existing Allocation,Aave DAI,Aave USDC,Aave USDT,Compound DAI,Compound USDC,Compound USDT,Convex DAI+USDC+USDT,Convex LUSD+3Crv,Convex OUSD+3Crv,Morpho Aave DAI,Morpho Aave USDC,Morpho Aave USDT,Morpho Compound DAI,Morpho Compound USDC,Morpho Compound USDT",1681758000,1681930800,17066282
-0x5fc2fe11e8b9097839845414514fab9907918dd1cf2509032dd1f8cb62d477bd,"Strategy Allocation for Week of April 10, 2023","OUSD holdings are adjusted on a weekly basis. Funds are allocated to approved strategies according to a community vote.
-
-Please read how strategy allocation works and review the rules before voting:
-
-https://docs.ousd.com/core-concepts/fund-management
-
-+ Note that governance has limited our LUSD+3Crv allocation to a maximum of $100k.
-
-_Pro tip_
-
-Josh built a calculator that can be used to figure out how you might want to vote. It pulls the live APY numbers for each protocol as well as the current allocation numbers from OUSD analytics. The calculations in the spreadsheet are not guaranteed to be accurate, so please do your own research.
-
-https://docs.google.com/spreadsheets/d/1J6ZxYHcRtflCNzMsyTMn57-GnKGCp7US4RO2Q-m_pGw/edit","Existing Allocation,Aave DAI,Aave USDC,Aave USDT,Compound DAI,Compound USDC,Compound USDT,Convex DAI+USDC+USDT,Convex LUSD+3Crv,Convex OUSD+3Crv,Morpho Aave DAI,Morpho Aave USDC,Morpho Aave USDT,Morpho Compound DAI,Morpho Compound USDC,Morpho Compound USDT",1681153200,1681326000,17015458

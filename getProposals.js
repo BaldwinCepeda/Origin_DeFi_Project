@@ -110,21 +110,49 @@ async function main() {
     }
     console.log("Here===============");
 
-    try {
-      const parsedData = JSON.parse(data);
 
-      for (i = 0; i < 19; i++) {
-        const proposalId = parsedData[i]["Proposal ID"];
-        console.log(proposalId + " " + i);
 
+    async function fetchData() {
+      try {
+        const parsedData = JSON.parse(data);
+
+        for (let i = 0; i < 19; i++) {
+          const proposalId = parsedData[i]["Proposal ID"];
+          console.log(proposalId + " " + i);
+
+          const document = gql`
+    {
+      votes (
+        first: 1000
+        skip: 0
+        where: {
+          proposal: "${proposalId}"
+        }
+        orderBy: "created",
+        orderDirection: desc
+      ) {
+        id
+        voter
+        created
+        proposal {
+          id
+        }
+        choice
+        space {
+          id
+        }
       }
+    }
+  `
 
-
-
-    } catch (error) {
-      console.error("Error occurred while parsing data:", error);
+          await request(endpoint, document);
+        }
+      } catch (error) {
+        console.error("Error occurred while parsing data:", error);
+      }
     }
 
+    fetchData();
     // Process the file data
 
   });
